@@ -1,0 +1,142 @@
+// Typography
+$sans-serif: "proxima-nova-soft", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$sans-serif-alt: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$serif: "Georgia", Georgia, serif;
+
+$base-font-family: $sans-serif-alt;
+$header-font-family: $sans-serif;
+
+// Layout Sizes
+$base-border-radius: 2px;
+$base-font-size: 1em;
+$base-line-height: 1.7;
+$base-vertical-spacing: ($base-line-height / 2) + em;
+$base-content-width: em(800);
+$navigation-bar-height: 60px;
+$navigation-button-height: $navigation-bar-height;
+$base-margin: 1em;	
+
+// Font Sizes
+$h1-font-size: $base-font-size * 2;
+$h2-font-size: $base-font-size * 1.75;
+$h3-font-size: $base-font-size * 1.5;
+$h4-font-size: $base-font-size * 1.25;
+$h5-font-size: $base-font-size * 1;
+$h6-font-size: $base-font-size * 0.875;
+$small-font-size: $base-font-size * .875;
+$large-font-size: $base-font-size * 1.4;
+
+// Font Sizes Mobile
+$font-size-mobile-multiplier: 1.2;
+$h1-font-size-mobile: $base-font-size * $font-size-mobile-multiplier * 2.5;
+$h2-font-size-mobile: $base-font-size * $font-size-mobile-multiplier * 2;
+$h3-font-size-mobile: $base-font-size * $font-size-mobile-multiplier * 1.5;
+$h4-font-size-mobile: $base-font-size * $font-size-mobile-multiplier * 1.25;
+$h5-font-size-mobile: $base-font-size * $font-size-mobile-multiplier * 1;
+$h6-font-size-mobile: $base-font-size * $font-size-mobile-multiplier * 0.875;
+
+// Base Colors
+$black: #000;
+$bright-red: #ea2a42;
+$blue: #6891d6;
+$cold-green: #95d179;
+$dark-gray: #555;
+$dark-navy: #16182f;
+$gray: #bbb;
+$light-blue: #4199ff;
+$light-gray: #eee;
+$linkedin-blue: #4a96cb;
+$orange-red: #ff0003;
+$soft-green: #7ed321;
+$white: #ffffff;
+$yellow: #fff131;
+$yellow-green: #74c557;
+$steel-blue: #bdd7d3;
+
+// Background Colors
+$base-body-color: $light-gray;
+$code-background-color: rgba(245, 245, 245, .3);
+$pre-background-color: #333;
+$section-background-color: $white;
+
+// Navigation Color
+
+// Border Color
+$base-border-color: rgba($black, .1);
+
+// Font Colors
+$base-accent-color: $blue;
+$base-font-color: $dark-gray;
+$base-submit-color: $soft-green;
+$navigation-font-color: $dark-navy;
+
+// Form Colors
+$base-label-color: $dark-gray;
+
+// Button Colors
+$base-button-background-color: $light-gray;
+$base-button-color: $base-font-color;
+$disabled-button-color: $light-gray;
+$primary-button-background-color: $yellow-green;
+$primary-button-color: $white;
+
+// State Colors
+$active-color: $soft-green;
+$inactive-color: $dark-gray;
+$active-accent-color: darken($soft-green, 10);
+$error-color: $orange-red;
+$alert-color: $bright-red;
+$notice-color: $yellow;
+$success-color: $soft-green;
+
+// Badge Colors
+$badge-color: $white;
+$badge-background-color: $orange-red;
+$badge-background-color-tint: darken($orange-red, 7%);
+
+// Flash Colors
+$flash-alert-color: $alert-color;
+$flash-error-color: $error-color;
+$flash-notice-color: $notice-color;
+$flash-success-color: darken($success-color, 5);
+
+// Text Link Colors
+$base-link-color: darken($base-accent-color, 20);
+$hover-link-color: darken($base-accent-color, 30);
+
+// Cards
+$card-padding: 2em;
+$card-vertical-spacer: 1em;
+
+// Progress Bars
+$progress-meter-color: $base-accent-color;
+$progress-background-color: darken($base-body-color, 8);
+$progress-animation-duration: 500ms;
+
+// Chat
+$message-incoming-color: darken($white, 5%);
+$message-outgoing-color: $light-blue;
+
+// Challenge Navigation
+$challenge-navigation-bar-height: 50px;
+$challenge-navigation-button-size: $challenge-navigation-bar-height * 0.9;
+
+// Forms
+$form-border-color: $base-border-color;
+$form-border-color-hover: darken($base-border-color, 10);
+$form-border-color-focus: $base-accent-color;
+$form-border-radius: $base-border-radius;
+$form-box-shadow: inset 0 1px 3px hsla(0, 0%, 0%, 0.06);
+$form-box-shadow-focus: $form-box-shadow, 0 0 5px rgba(darken($form-border-color-focus, 5), 0.7);
+$form-font-size: $base-font-size;
+$form-font-family: $base-font-family;
+
+// z-indicies
+$z-index-in-content: 10;
+$z-index-over-content: 20;
+$z-index-over-site: 30;
+
+// Conversations
+$panel-expand-height: 26em;
+$conversation-header-height: 3.25em;
+$conversation-emphasis-color: tint($blue, 80%);

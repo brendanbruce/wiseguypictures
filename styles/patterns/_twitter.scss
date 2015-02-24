@@ -1,0 +1,13 @@
+.hero__twitter {
+	background-color: rgba(0, 132, 209, 0.9);	
+}
+
+.hero__twitter__feed-item {
+	@include span-columns(3);
+	color: $white;
+
+
+	p {
+		color: $white;
+	}
+}

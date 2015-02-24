@@ -1,0 +1,30 @@
+.navigation-bar {
+	@include outer-container;
+}
+
+.navigation-bar__logo {
+	@include span-columns(2);
+}
+
+.navigation-bar__nav {
+	@include span-columns(9);
+	@include clearfix();
+
+	ul {
+		border: 1px solid #2395d8;
+	}
+
+	li {
+		display: inline-block;
+	}
+
+	a {
+		color: $navigation-font-color;
+		text-transform: uppercase;
+		display: inline-block;
+		padding: 0.5em;
+		border-right: 1px solid #2395d8;
+
+	}
+}
+

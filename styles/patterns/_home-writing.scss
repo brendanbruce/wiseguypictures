@@ -1,0 +1,9 @@
+.home-writing {
+	@include span-columns(3);
+}
+
+.home-writing__thumbnail {
+	width: 100%;
+	min-height: 16em;
+	overflow: hidden;
+}
