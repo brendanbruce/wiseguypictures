@@ -163,6 +163,9 @@ p {
   .home-video:last-child {
     margin-right: 0; }
 
+.home-video__thumb {
+  width: 100%; }
+
 .home-writing {
   float: left;
   display: block;
@@ -175,6 +178,63 @@ p {
   width: 100%;
   min-height: 16em;
   overflow: hidden; }
+
+.link-header {
+  height: 60px;
+  width: 100%;
+  border-bottom: 1px solid #2395d8;
+  margin-top: 3em;
+  overflow: hidden;
+  padding-bottom: 20px;
+  position: relative; }
+
+.link-header__left-area {
+  margin-left: 8px; }
+
+.link-header__left-area__mascot {
+  position: absolute;
+  top: 0;
+  height: auto;
+  width: 55px;
+  display: block;
+  float: left; }
+
+.link-header__left-area__text {
+  position: absolute;
+  top: 0;
+  left: 75px;
+  color: #ffffff;
+  font-weight: normal;
+  margin-top: -5px;
+  text-transform: uppercase; }
+  .link-header__left-area__text h2 {
+    background-color: #191b3f;
+    font-weight: normal;
+    line-height: 0.5;
+    padding: 0.5em; }
+
+.link-header__left-area__text:before {
+  width: 0;
+  height: 0;
+  background-color: none;
+  border-bottom: 10px solid #191b3f;
+  border-left: 15px solid transparent;
+  bottom: -20px;
+  content: "";
+  margin-left: -15px;
+  margin-top: 10px;
+  position: relative; }
+
+.link-header__view-all {
+  color: #191b3f;
+  display: block;
+  height: 40px;
+  float: right;
+  font-weight: bold;
+  font-size: 0.75em; }
+
+.link-header__view-all:after {
+  content: url("/images/arrow.png"); }
 
 .navigation-bar {
   max-width: 68em;
@@ -213,7 +273,7 @@ p {
     display: inline-block;
     border-right: 1px solid #2395d8; }
   .navigation-bar__nav a {
-    color: #16182f;
+    color: #191b3f;
     text-transform: uppercase;
     display: inline-block;
     padding: 1em; }

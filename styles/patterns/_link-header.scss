@@ -1,0 +1,60 @@
+.link-header {
+  @include size(100% 60px);
+  border-bottom: 1px solid $border-blue;
+  margin-top:3em;
+  overflow: hidden;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.link-header__left-area {
+  margin-left: 8px;
+}
+
+.link-header__left-area__mascot {
+  @include position(absolute, 0 null null null);
+  @include size(55px auto);
+  display: block;
+  float:left;
+}
+
+.link-header__left-area__text {
+  @include position(absolute, 0 null null 75px);
+  color: $white;
+  font-weight: normal;
+  margin-top: -5px;
+  text-transform: uppercase;
+
+  h2 {
+    background-color: $dark-navy;
+    font-weight: normal;
+    line-height: 0.5;
+    padding: 0.5em;
+  }
+}
+
+.link-header__left-area__text:before {
+  width: 0;
+  height: 0;
+  background-color:none;
+  border-bottom: 10px solid $dark-navy;
+  border-left: 15px solid transparent;
+  bottom: -20px;
+  content: "";
+  margin-left: -15px;
+  margin-top: 10px;
+  position: relative;
+}
+
+.link-header__view-all {
+  color: $dark-navy;
+  display: block;
+  height: 40px;
+  float: right;
+  font-weight: bold;
+  font-size: 0.75em;
+}
+
+.link-header__view-all:after {
+  content: url("/images/arrow.png");
+}

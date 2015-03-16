@@ -1833,6 +1833,28 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/images\/uploads\/writing\/_thumbs\/video-placeholder.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2746,
+		"inputAbbreviatedPath": "\/images\/uploads\/writing\/_thumbs\/video-placeholder.jpg",
+		"outputAbbreviatedPath": "\/images\/uploads\/writing\/_thumbs\/video-placeholder.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/uploads\/writing\/_thumbs\/video-placeholder2.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 3128,
+		"inputAbbreviatedPath": "\/images\/uploads\/writing\/_thumbs\/video-placeholder2.jpg",
+		"outputAbbreviatedPath": "\/images\/uploads\/writing\/_thumbs\/video-placeholder2.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/uploads\/writing\/_thumbs\/wiseguy.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -1873,6 +1895,28 @@
 		"initialSize": 761438,
 		"inputAbbreviatedPath": "\/images\/uploads\/writing\/tester.png",
 		"outputAbbreviatedPath": "\/images\/uploads\/writing\/tester.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/uploads\/writing\/video-placeholder.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 36692,
+		"inputAbbreviatedPath": "\/images\/uploads\/writing\/video-placeholder.jpg",
+		"outputAbbreviatedPath": "\/images\/uploads\/writing\/video-placeholder.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/uploads\/writing\/video-placeholder2.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 31649,
+		"inputAbbreviatedPath": "\/images\/uploads\/writing\/video-placeholder2.jpg",
+		"outputAbbreviatedPath": "\/images\/uploads\/writing\/video-placeholder2.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -1941,6 +1985,15 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/styles\/application.css": {
+		"fileType": 16,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/styles\/application.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/styles\/application.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
@@ -1989,6 +2042,22 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
+	"\/styles\/base\/_variables.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/styles\/base\/_variables.scss",
+		"outputAbbreviatedPath": "\/styles\/css\/_variables.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
 	"\/styles\/patterns\/_base.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
@@ -2030,6 +2099,22 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/styles\/patterns\/_grid-2up.scss",
 		"outputAbbreviatedPath": "\/styles\/css\/_grid-2up.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
+	"\/styles\/patterns\/_header-link.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/styles\/patterns\/_header-link.scss",
+		"outputAbbreviatedPath": "\/styles\/css\/_header-link.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -2119,6 +2204,38 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/styles\/patterns\/_home-writing.scss",
 		"outputAbbreviatedPath": "\/styles\/css\/_home-writing.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
+	"\/styles\/patterns\/_link-header.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/styles\/patterns\/_link-header.scss",
+		"outputAbbreviatedPath": "\/styles\/css\/_link-header.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
+	"\/styles\/patterns\/_navigation-bar.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/styles\/patterns\/_navigation-bar.scss",
+		"outputAbbreviatedPath": "\/styles\/css\/_navigation-bar.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,

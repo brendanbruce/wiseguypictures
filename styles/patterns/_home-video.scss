@@ -1,3 +1,8 @@
 .home-video {
 	@include span-columns(6);
+
+}
+
+.home-video__thumb {
+  width: 100%;
 }
