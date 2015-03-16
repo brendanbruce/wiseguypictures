@@ -155,6 +155,19 @@ p {
   height: 575px;
   overflow: hidden; }
 
+.hero__image__text {
+  color: #ffffff;
+  position: absolute; }
+
+.hero__twitter {
+  height: 210px;
+  overflow: hidden; }
+
+.hero__twitter__mascot {
+  height: auto;
+  width: 110px;
+  float: right; }
+
 .home-video {
   float: left;
   display: block;

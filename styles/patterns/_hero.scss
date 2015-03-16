@@ -2,3 +2,18 @@
 	height: 575px;
 	overflow:hidden;
 }
+
+.hero__image__text {
+  color: $white;
+  position: absolute;
+}
+
+.hero__twitter {
+  height: 210px;
+  overflow: hidden;
+}
+
+.hero__twitter__mascot {
+  @include size(110px auto);
+  float:right;
+}

@@ -2154,15 +2154,6 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/styles\/patterns\/_hero.css": {
-		"fileType": 16,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/styles\/patterns\/_hero.css",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
 	"\/styles\/patterns\/_hero.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
