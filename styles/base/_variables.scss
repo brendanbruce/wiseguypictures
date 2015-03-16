@@ -7,6 +7,7 @@ $base-font-family: $sans-serif-alt;
 $header-font-family: $sans-serif;
 
 // Layout Sizes
+$base-unit: 1em;
 $base-border-radius: 2px;
 $base-font-size: 1em;
 $base-line-height: 1.7;
@@ -14,17 +15,11 @@ $base-vertical-spacing: ($base-line-height / 2) + em;
 $base-content-width: em(800);
 $navigation-bar-height: 60px;
 $navigation-button-height: $navigation-bar-height;
-$base-margin: 1em;	
+$base-margin: $base-unit;	
+$base-padding: $base-unit;	
 
 // Font Sizes
-$h1-font-size: $base-font-size * 2;
-$h2-font-size: $base-font-size * 1.75;
-$h3-font-size: $base-font-size * 1.5;
-$h4-font-size: $base-font-size * 1.25;
-$h5-font-size: $base-font-size * 1;
-$h6-font-size: $base-font-size * 0.875;
-$small-font-size: $base-font-size * .875;
-$large-font-size: $base-font-size * 1.4;
+$header-font-size: 4em;
 
 // Font Sizes Mobile
 $font-size-mobile-multiplier: 1.2;
@@ -37,16 +32,15 @@ $h6-font-size-mobile: $base-font-size * $font-size-mobile-multiplier * 0.875;
 
 // Base Colors
 $black: #000;
+$base-blue: #0072b1;
 $bright-red: #ea2a42;
 $blue: #6891d6;
 $cold-green: #95d179;
 $dark-gray: #555;
 $dark-navy: #16182f;
 $gray: #bbb;
-$light-blue: #4199ff;
+$highlight-blue: #379dd5;
 $light-gray: #eee;
-$linkedin-blue: #4a96cb;
-$orange-red: #ff0003;
 $soft-green: #7ed321;
 $white: #ffffff;
 $yellow: #fff131;
@@ -84,19 +78,15 @@ $primary-button-color: $white;
 $active-color: $soft-green;
 $inactive-color: $dark-gray;
 $active-accent-color: darken($soft-green, 10);
-$error-color: $orange-red;
 $alert-color: $bright-red;
 $notice-color: $yellow;
 $success-color: $soft-green;
 
 // Badge Colors
 $badge-color: $white;
-$badge-background-color: $orange-red;
-$badge-background-color-tint: darken($orange-red, 7%);
 
 // Flash Colors
 $flash-alert-color: $alert-color;
-$flash-error-color: $error-color;
 $flash-notice-color: $notice-color;
 $flash-success-color: darken($success-color, 5);
 
@@ -113,13 +103,6 @@ $progress-meter-color: $base-accent-color;
 $progress-background-color: darken($base-body-color, 8);
 $progress-animation-duration: 500ms;
 
-// Chat
-$message-incoming-color: darken($white, 5%);
-$message-outgoing-color: $light-blue;
-
-// Challenge Navigation
-$challenge-navigation-bar-height: 50px;
-$challenge-navigation-button-size: $challenge-navigation-bar-height * 0.9;
 
 // Forms
 $form-border-color: $base-border-color;

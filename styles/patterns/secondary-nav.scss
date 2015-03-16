@@ -1,0 +1,21 @@
+.secondary-nav {
+	background-color: $base-blue;
+}
+
+.secondary-nav__nav {
+	text-transform: uppercase;
+	font-size: $base-font-size;
+
+	li {
+	 display: inline-block;
+	 padding-left: 20px;
+	}
+
+	li:first-child {
+		padding-left: 0;
+	}
+
+	a {
+		color: $white;
+	}
+}

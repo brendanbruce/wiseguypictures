@@ -1,0 +1,15 @@
+.video {
+	background-color: #0d1b21;
+
+	iframe {
+		margin: 0 auto;
+	}
+}
+
+.video-details__summary {
+	@include span-columns(6);
+}
+
+.video-details__crew {
+	@include span-columns(6);
+}

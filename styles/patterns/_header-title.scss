@@ -1,0 +1,21 @@
+.header-title {
+	background-image: url("/images/header-background.jpg");
+	height: 144px;
+	overflow: hidden;
+}
+
+.header-title__character {
+	display: block;
+	float: right;
+	margin-top: -1em;
+	width: 100px;
+	height: auto;
+}
+
+.header-title__text {
+	color: $white;
+	font-family: $base-font-family;
+	font-size: $header-font-size;
+	font-weight: 100;
+	text-transform: uppercase;
+}
