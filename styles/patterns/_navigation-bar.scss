@@ -9,22 +9,51 @@
 .navigation-bar__nav {
 	@include span-columns(9);
 	@include clearfix();
+  
+  float:right;
+  margin-top: 0.5em;
 
 	ul {
 		border: 1px solid #2395d8;
+    display: inline-block;
 	}
 
 	li {
 		display: inline-block;
-	}
+		border-right: 1px solid #2395d8;
+  }
 
 	a {
 		color: $navigation-font-color;
 		text-transform: uppercase;
 		display: inline-block;
-		padding: 0.5em;
-		border-right: 1px solid #2395d8;
-
+		padding: 1em;
 	}
+
+  li:last-child {
+    border-right: none;
+  }
+}
+
+.navigation-bar__nav__right {
+  margin-left: -6px;
+  padding:0 1em;
+}
+
+.navigation-bar__nav__right li {
+  border: none;
+
+  @each $link, $var in 
+  (twitter: $twitter-color, 
+  youtube: $youtube-color, 
+  facebook: $facebook-color) {
+    .#{$link} {
+      color: $var;
+    }
+  }
+
+  a {
+    padding: 1em 0.5em;
+  }
 }
 
