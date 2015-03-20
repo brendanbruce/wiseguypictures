@@ -247,7 +247,10 @@ p {
   font-size: 0.75em; }
 
 .link-header__view-all:after {
-  content: url("/images/arrow.png"); }
+  content: url("/images/arrow.png");
+  display: block;
+  float: right;
+  margin: -4px 0 0 10px; }
 
 .navigation-bar {
   max-width: 68em;

@@ -56,5 +56,8 @@
 }
 
 .link-header__view-all:after {
-  content: url("/images/arrow.png");
+  content: url("/images/arrow.png"); 
+  display: block;
+  float: right;
+  margin: -4px 0 0 10px;
 }
