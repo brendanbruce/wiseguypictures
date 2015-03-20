@@ -1,9 +1,23 @@
 .grid-2up {
 	@include span-columns(6);
 	@include omega(2n);
+  color: #010101;
 }
 
 .grid-3up {
 	@include span-columns(4);
 	@include omega(3n);
+}
+
+.grid__subhead {
+  font-size: 1.5em;
+  margin: 0.5em 0 0.25em;
+
+  a {
+    color: $dark-navy;
+  }
+
+  p {
+    color: #010101;
+  }
 }

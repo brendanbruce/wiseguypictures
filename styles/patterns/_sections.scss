@@ -1,8 +1,14 @@
 .section {
 	@include outer-container();
+
 	padding: $base-margin 0;
 }
 
 .section--full {
 	padding: $base-margin 0;
+}
+
+.section--gray {
+  background-color: #f2f6f7;
+  border-top: 2px solid #e1e5e6;
 }

@@ -56,7 +56,7 @@ label {
 
 p {
   margin: 0 0 $base-margin;
-  color: lighten($base-font-color, 25%);
+  color: $base-font-color;
   font-size: $base-font-size;
   line-height: $base-line-height;
 }
