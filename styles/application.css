@@ -147,6 +147,33 @@ p {
 .position-absolute {
   position: absolute; }
 
+.text-small {
+  font-size: 0.75em; }
+
+.text-bold {
+  font-weight: bold; }
+
+.font-weight-100 {
+  font-weight: 100; }
+
+.font-weight-300 {
+  font-weight: 300; }
+
+.font-weight-400 {
+  font-weight: 400; }
+
+.font-weight-600 {
+  font-weight: 600; }
+
+.font-weight-700 {
+  font-weight: 700; }
+
+.font-weight-800 {
+  font-weight: 800; }
+
+.font-weight-900 {
+  font-weight: 900; }
+
 .image--width-100 {
   width: 100%;
   height: auto; }
@@ -160,13 +187,56 @@ p {
   position: absolute; }
 
 .hero__twitter {
-  height: 210px;
-  overflow: hidden; }
+  height: 225px;
+  overflow: hidden;
+  background: url("/images/city-bg.png") left bottom repeat-x; }
 
 .hero__twitter__mascot {
   height: auto;
   width: 110px;
-  float: right; }
+  float: right;
+  margin-top: 15px;
+  position: relative;
+  z-index: 20; }
+
+.hero__twitter__mascot__header {
+  position: absolute;
+  top: 27px;
+  right: 26px;
+  background-color: #191b3f;
+  z-index: 30; }
+  .hero__twitter__mascot__header h2 {
+    color: #ffffff;
+    font-weight: normal;
+    line-height: 0.5;
+    margin-bottom: 0;
+    padding: 0.75em;
+    text-transform: uppercase; }
+  .hero__twitter__mascot__header:after {
+    height: 0;
+    width: 0;
+    content: "";
+    border-left: 17px solid transparent;
+    border-right: 2px solid transparent;
+    border-top: 23px solid #191b3f;
+    margin: 0 0 0 74px;
+    position: absolute; }
+
+.hero__twitter__feed-item {
+  padding-right: 1em; }
+  .hero__twitter__feed-item p {
+    line-height: 1.4;
+    margin: 10px 0 5px 0; }
+
+.hero__twitter__bottom-bar {
+  color: #ffffff;
+  background-color: #3fa5dd;
+  border-bottom: 2px #2580b3 solid;
+  margin-top: -3.25em;
+  position: relative;
+  z-index: 10; }
+  .hero__twitter__bottom-bar i {
+    margin-right: 10px; }
 
 .home-video {
   float: left;

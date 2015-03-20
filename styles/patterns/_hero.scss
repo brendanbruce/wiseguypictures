@@ -9,11 +9,63 @@
 }
 
 .hero__twitter {
-  height: 210px;
+  height: 225px;
   overflow: hidden;
+  background: url("/images/city-bg.png") left bottom repeat-x;
 }
 
 .hero__twitter__mascot {
   @include size(110px auto);
-  float:right;
+  float: right;
+  margin-top: 15px;
+  position: relative;
+  z-index: 20;
+}
+
+.hero__twitter__mascot__header {
+  @include position(absolute, 27px 26px null null); 
+  background-color: $dark-navy;
+  z-index: 30;
+
+
+  h2 {
+    color: #ffffff;
+    font-weight: normal;
+    line-height: 0.5;
+    margin-bottom: 0;
+    padding: 0.75em;
+    text-transform: uppercase;
+  }
+
+  &:after {
+    @include size(0);
+    content: "";
+    border-left: 17px solid transparent;
+    border-right: 2px solid transparent;
+    border-top: 23px solid $dark-navy;
+    margin: 0 0 0 74px;
+    position: absolute;
+  }
+}
+
+.hero__twitter__feed-item {
+  padding-right: 1em;
+
+  p {
+    line-height: 1.4;
+    margin: 10px 0 5px 0;
+  }
+}
+
+.hero__twitter__bottom-bar {
+  color: $white;
+  background-color: $bright-blue;
+  border-bottom: 2px $blue solid;
+  margin-top: -3.25em;
+  position: relative;
+  z-index: 10;
+
+  i {
+    margin-right: 10px;
+  }
 }

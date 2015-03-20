@@ -6,6 +6,30 @@
 	position: absolute;
 }
 
+.text-small {
+  font-size: 0.75em;
+}
+
+.text-bold {
+  font-weight: bold;
+}
+
+$font-weights: (
+  thin: 100,
+  light: 300,
+  regular: 400,
+  semibold: 600,
+  bold: 700,
+  extrabold: 800,
+  black: 900
+);
+
+@each $font-weight, $font-weight-number in $font-weights {
+  .font-weight-#{$font-weight-number} { 
+    font-weight: $font-weight-number;
+  }
+}
+
 .image--width-100 {
 	width: 100%;
 	height: auto;
