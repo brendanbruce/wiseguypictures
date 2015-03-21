@@ -1,0 +1,17 @@
+.footer {
+  background: url(/images/bg-texture.jpg);
+
+  a {
+    color: $white;
+  }
+}
+
+.footer__copyright {
+  text-transform: uppercase;
+  color: $white;
+  text-align: center;
+}
+
+.footer__darken {
+  background-color: rgba(37, 106, 143, 0.7);
+}

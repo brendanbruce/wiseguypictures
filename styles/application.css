@@ -98,6 +98,19 @@ p {
   top: 50%;
   transform: translateY(-50%); }
 
+.footer {
+  background: url(/images/bg-texture.jpg); }
+  .footer a {
+    color: #ffffff; }
+
+.footer__copyright {
+  text-transform: uppercase;
+  color: #ffffff;
+  text-align: center; }
+
+.footer__darken {
+  background-color: rgba(37, 106, 143, 0.7); }
+
 .grid-2up {
   float: left;
   display: block;
@@ -186,6 +199,12 @@ p {
 .image--width-100 {
   width: 100%;
   height: auto; }
+
+.white-box {
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  display: inline-block;
+  padding: 1em; }
 
 .hero {
   height: 575px;

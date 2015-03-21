@@ -1684,6 +1684,17 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/images\/bg-texture.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 10995,
+		"inputAbbreviatedPath": "\/images\/bg-texture.jpg",
+		"outputAbbreviatedPath": "\/images\/bg-texture.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/captchas\/index.html": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -2094,6 +2105,22 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/styles\/patterns\/_featured-video.scss",
 		"outputAbbreviatedPath": "\/styles\/css\/_featured-video.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
+	"\/styles\/patterns\/_footer.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/styles\/patterns\/_footer.scss",
+		"outputAbbreviatedPath": "\/styles\/css\/_footer.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
