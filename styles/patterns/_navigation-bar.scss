@@ -7,11 +7,12 @@
 }
 
 .navigation-bar__nav {
-	@include span-columns(9);
-	@include clearfix();
+  @include span-columns(9);
+  @include clearfix();
   
   float:right;
   margin-top: 0.5em;
+  text-align: right;
 
 	ul {
 		border: 1px solid $border-blue;
@@ -43,9 +44,9 @@
 .navigation-bar__nav__right li {
   border: none;
 
-  @each $link, $var in 
-  (twitter: $twitter-color, 
-  youtube: $youtube-color, 
+  @each $link, $var in
+  (twitter: $twitter-color,
+  youtube: $youtube-color,
   facebook: $facebook-color) {
     .#{$link} {
       color: $var;
