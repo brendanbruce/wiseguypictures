@@ -14,8 +14,8 @@
 $config['app_version'] = '292';
 $config['license_contact'] = '';
 $config['license_number'] = 'CORE LICENSE';
-$config['debug'] = '1';
-$config['cp_url'] = 'http://localhost:8888/admin.php';
+$config['debug'] = '2';
+$config['cp_url'] = '/admin.php';
 $config['doc_url'] = 'http://ellislab.com/expressionengine/user-guide/';
 $config['is_system_on'] = 'y';
 $config['allow_extensions'] = 'y';
@@ -41,7 +41,7 @@ $config['cookie_httponly'] = 'y';
 | 'ORIG_PATH_INFO'	Uses the ORIG_PATH_INFO
 |
 */
-$config['uri_protocol']	= 'AUTO';
+$config['uri_protocol']	= 'REQUEST_URI';
 
 /*
 |--------------------------------------------------------------------------
@@ -151,6 +151,8 @@ $config['encryption_key'] = '';
 */
 $config['rewrite_short_tags'] = TRUE;
 
+/* Link to local server config settings */
+require $_SERVER['DOCUMENT_ROOT'] . '/config/config.master.php';
 
 /* End of file config.php */
 /* Location: ./system/expressionengine/config/config.php */
