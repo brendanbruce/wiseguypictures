@@ -1,11 +1,18 @@
-.grid-2up {
-  @include span-columns(6);
-  @include omega(2n);
-  color: #010101;
+%grid {
+  margin-bottom: 3em;
 }
 
-.grid-3up {
-  margin-bottom: 3em;
+.grid--2up {
+  @extend %grid;
+
+  @include media($small-screen) {
+  @include span-columns(6);
+  @include omega(2n);
+  }
+}
+
+.grid--3up {
+  @extend %grid;
 
   @include media($small-screen) {
     @include span-columns(4);
