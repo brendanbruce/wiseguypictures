@@ -450,18 +450,24 @@ p {
   .secondary-nav__nav a {
     color: #ffffff; }
 
-.section, .section--mini {
+.section, .section--large, .section--mini {
   max-width: 68em;
   margin-left: auto;
   margin-right: auto;
   padding: 1em 1em; }
-  .section::after, .section--mini::after {
+  .section::after, .section--large::after, .section--mini::after {
     clear: both;
     content: "";
     display: table; }
   @media screen and (min-width: 75em) {
-    .section, .section--mini {
+    .section, .section--large, .section--mini {
       padding: 1em 0; } }
+
+.section--large {
+  padding: 3em 1em; }
+  @media screen and (min-width: 75em) {
+    .section--large {
+      padding: 3em 0; } }
 
 .section--full {
   padding: 1em 0; }

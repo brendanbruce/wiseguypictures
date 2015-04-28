@@ -8,6 +8,15 @@
   }
 }
 
+.section--large {
+  @extend .section;
+  padding: 3em 1em;
+
+  @include media($xlarge-screen) {
+    padding: 3em 0;
+  }
+}
+
 .section--full {
   padding: $base-margin 0;
 }
