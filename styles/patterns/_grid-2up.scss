@@ -1,16 +1,33 @@
 .grid-2up {
-	@include span-columns(6);
-	@include omega(2n);
+  @include span-columns(6);
+  @include omega(2n);
   color: #010101;
 }
 
 .grid-3up {
-	@include span-columns(4);
-	@include omega(3n);
+  margin-bottom: 3em;
+
+  @include media($small-screen) {
+    @include span-columns(4);
+    @include omega(3n);
+  }
+}
+
+.grid__image {
+  overflow: hidden;
+  background-size: cover;
+  background-position: top center;
+  width: 100%;
+  height: 20em;
+
+  @include media($large-screen){
+    height: 20em;
+  }
 }
 
 .grid__subhead {
   font-size: 1.5em;
+  font-weight: 300;
   margin: 0.5em 0 0.25em;
 
   a {

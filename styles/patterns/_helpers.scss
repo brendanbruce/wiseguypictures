@@ -1,9 +1,9 @@
 .position-relative {
-	position: relative;
+  position: relative;
 }
 
 .position-absolute {
-	position: absolute;
+  position: absolute;
 }
 
 .text-small {
@@ -25,14 +25,9 @@ $font-weights: (
 );
 
 @each $font-weight, $font-weight-number in $font-weights {
-  .font-weight-#{$font-weight-number} { 
+  .font-weight-#{$font-weight-number} {
     font-weight: $font-weight-number;
   }
-}
-
-.image--width-100 {
-  width: 100%;
-  height: auto;
 }
 
 .white-box {

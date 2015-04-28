@@ -1,11 +1,21 @@
 .section {
-	@include outer-container();
+  @include outer-container();
 
-	padding: $base-margin 0;
+  padding: $base-margin 1em;
+
+  @include media($xlarge-screen) {
+    padding: $base-margin 0;
+  }
 }
 
 .section--full {
-	padding: $base-margin 0;
+  padding: $base-margin 0;
+}
+
+.section--mini {
+  @extend .section;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 .section--gray {
