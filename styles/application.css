@@ -111,6 +111,9 @@ p {
 .footer__darken {
   background-color: rgba(37, 106, 143, 0.7); }
 
+.footer__left {
+  margin-top: 0.5em; }
+
 .navigation-bar__nav__right--footer {
   float: right;
   margin-left: -6px;
@@ -190,6 +193,11 @@ p {
   font-weight: 100;
   text-transform: uppercase; }
 
+.clearfix::after {
+  clear: both;
+  content: "";
+  display: table; }
+
 .position-relative {
   position: relative; }
 
@@ -224,9 +232,19 @@ p {
   font-weight: 900; }
 
 .white-box {
+  -webkit-transition: all 0.25s ease-out;
+  -moz-transition: all 0.25s ease-out;
+  transition: all 0.25s ease-out;
   border: 2px solid #ffffff;
   color: #ffffff;
-  padding: 1em; }
+  font-size: 0.9em;
+  padding: 0.7em; }
+  .white-box:hover {
+    -webkit-transition: all 0.25s ease-out;
+    -moz-transition: all 0.25s ease-out;
+    transition: all 0.25s ease-out;
+    color: #0072b1;
+    background-color: #ffffff; }
 
 .hero {
   height: 575px;

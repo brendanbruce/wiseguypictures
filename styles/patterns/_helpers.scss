@@ -1,3 +1,7 @@
+.clearfix {
+  @include clearfix;
+}
+
 .position-relative {
   position: relative;
 }
@@ -31,7 +35,16 @@ $font-weights: (
 }
 
 .white-box {
+  @include transition(all 0.25s ease-out);
   border: 2px solid $white;
   color: $white;
-  padding: 1em;
+  font-size: 0.9em;
+  padding: 0.7em;
+
+  &:hover {
+    @include transition(all 0.25s ease-out);
+    color: $base-blue;
+    background-color: $white;
+  }
 }
+

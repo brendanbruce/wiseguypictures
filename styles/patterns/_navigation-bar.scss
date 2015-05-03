@@ -1,9 +1,9 @@
 .navigation-bar {
-	@include outer-container;
+  @include outer-container;
 }
 
 .navigation-bar__logo {
-	@include span-columns(2);
+  @include span-columns(2);
 }
 
 .navigation-bar__nav {
