@@ -4,10 +4,11 @@
 
 .grid--2up {
   @extend %grid;
+  @include span-columns(12);
 
   @include media($small-screen) {
-  @include span-columns(6);
-  @include omega(2n);
+    @include span-columns(6);
+    @include omega(2n);
   }
 }
 
@@ -17,6 +18,20 @@
   @include media($small-screen) {
     @include span-columns(4);
     @include omega(3n);
+  }
+}
+
+.grid--4up {
+  @extend %grid;
+
+  @include media(max-width $medium-screen) {
+    @include span-columns(6);
+    @include omega(2n);
+  }
+
+  @include media($medium-screen) {
+    @include span-columns(3);
+    @include omega(4n);
   }
 }
 

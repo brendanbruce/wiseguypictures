@@ -1,6 +1,22 @@
 .home-video {
-	@include span-columns(6);
+  position: relative;
+}
 
+.home-video__video {
+  position: relative;
+
+  &:hover > .home-video__play {
+    bottom: 5%;
+    opacity: 1.0;
+  }
+}
+
+.home-video__play {
+  @include transition(opacity 0.3s ease-out 0s, bottom 0.3s ease-out 0s);
+  @include triangle(40px 30px, $white, right);
+  @include position(absolute, null null 0% 5%);
+  opacity: 0;
+  z-index: 30;
 }
 
 .home-video__thumb {
