@@ -1,13 +1,88 @@
 .hero__twitter {
-	background-color: rgba(0, 132, 209, 0.9);	
+  background-color: rgba(0, 132, 209, 0.9);
+  // background: url("/images/city-bg.png") left bottom repeat-x;
+  height: auto;
+  padding-bottom: 1em;
+
+  @include media($medium-screen) {
+    height: 225px;
+    overflow: hidden;
+    padding-bottom: 0;
+  }
+}
+
+.hero__twitter__bottom-bar {
+  background-color: $bright-blue;
+  border-bottom: 2px $blue solid;
+  color: $white;
+  margin-top: 0;
+  position: relative;
+
+  @include media($medium-screen) {
+    margin-top: -3.25em;
+    z-index: 10;
+  }
+
+  i {
+    margin-right: 10px;
+  }
 }
 
 .hero__twitter__feed-item {
-	@include span-columns(3);
-	color: $white;
+  color: $white;
 
+  @include media($medium-screen) {
+    @include span-columns(3);
+    padding-right: 1em;
+  }
 
-	p {
-		color: $white;
-	}
+  p {
+    color: $white;
+    line-height: 1.4;
+    margin: 10px 0 5px 0;
+  }
+}
+
+.hero__twitter__mascot {
+  display: none;
+
+  @include media($medium-screen) {
+    @include size(110px auto);
+    display: block;
+    float: right;
+    margin-top: 15px;
+    position: relative;
+    z-index: 20;
+  }
+}
+
+.hero__twitter__mascot__header {
+  background-color: $dark-navy;
+  display: block;
+  float: right;
+  margin: 0 0 1em 1em;
+
+  @include media($medium-screen) {
+    @include position(absolute, 27px 26px null null); 
+    z-index: 30;
+  }
+
+  h2 {
+    color: #ffffff;
+    font-weight: normal;
+    line-height: 0.5;
+    margin-bottom: 0;
+    padding: 0.75em;
+    text-transform: uppercase;
+  }
+
+  &:after {
+    @include size(0);
+    content: "";
+    border-left: 17px solid transparent;
+    border-right: 2px solid transparent;
+    border-top: 23px solid $dark-navy;
+    margin: 0 0 0 74px;
+    position: absolute;
+  }
 }
