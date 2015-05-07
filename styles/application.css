@@ -247,12 +247,30 @@ p {
     background-color: #ffffff; }
 
 .hero {
+  background-position: center;
   height: 575px;
-  overflow: hidden; }
+  overflow: hidden;
+  position: relative; }
 
 .hero__image__text {
-  color: #ffffff;
-  position: absolute; }
+  position: absolute;
+  bottom: 15em;
+  left: 0;
+  color: #ffffff; }
+  @media screen and (min-width: 40em) {
+    .hero__image__text {
+      float: left;
+      display: block;
+      margin-right: 2.3576515979%;
+      width: 31.7615656014%;
+      position: relative;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      margin-top: 5em; }
+      .hero__image__text:last-child {
+        margin-right: 0; } }
 
 .hero__twitter {
   height: 225px;
@@ -397,40 +415,65 @@ p {
 .navigation-bar {
   max-width: 68em;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  margin-bottom: 1.2em; }
   .navigation-bar::after {
     clear: both;
     content: "";
     display: table; }
 
 .navigation-bar__logo {
-  float: left;
   display: block;
-  margin-right: 2.3576515979%;
-  width: 14.7019570017%; }
-  .navigation-bar__logo:last-child {
-    margin-right: 0; }
+  float: left;
+  margin: 0;
+  height: auto;
+  width: 50%; }
+  @media screen and (min-width: 31.25em) {
+    .navigation-bar__logo {
+      float: left;
+      display: block;
+      margin-right: 2.3576515979%;
+      width: 23.2317613015%;
+      max-height: 75px;
+      width: auto; }
+      .navigation-bar__logo:last-child {
+        margin-right: 0; } }
 
 .navigation-bar__nav {
-  float: left;
-  display: block;
-  margin-right: 2.3576515979%;
-  width: 74.4105871005%;
-  float: right;
-  margin-top: 0.5em;
-  text-align: right; }
-  .navigation-bar__nav:last-child {
-    margin-right: 0; }
+  margin-top: 0.5em; }
   .navigation-bar__nav::after {
     clear: both;
     content: "";
     display: table; }
+  @media screen and (min-width: 31.25em) {
+    .navigation-bar__nav {
+      float: left;
+      display: block;
+      margin-right: 2.3576515979%;
+      width: 74.4105871005%;
+      float: right;
+      text-align: right; }
+      .navigation-bar__nav:last-child {
+        margin-right: 0; } }
   .navigation-bar__nav ul {
     border: 1px solid #2395d8;
-    display: inline-block; }
-  .navigation-bar__nav li {
-    display: inline-block;
-    border-right: 1px solid #2395d8; }
+    clear: both;
+    display: block;
+    max-height: 1px;
+    overflow: hidden;
+    text-align: right; }
+    .navigation-bar__nav ul.expanded {
+      max-height: 1000px;
+      overflow: visible; }
+    @media screen and (min-width: 31.25em) {
+      .navigation-bar__nav ul {
+        display: inline-block;
+        max-height: 1000px;
+        overflow: auto; } }
+  @media screen and (min-width: 31.25em) {
+    .navigation-bar__nav li {
+      display: inline-block;
+      border-right: 1px solid #2395d8; } }
   .navigation-bar__nav a {
     color: #191b3f;
     text-transform: uppercase;
@@ -439,12 +482,22 @@ p {
   .navigation-bar__nav li:last-child {
     border-right: none; }
 
+.navigation-bar__nav__icon {
+  display: block;
+  float: right;
+  padding: 0.5em 0.5em 0 0; }
+  @media screen and (min-width: 31.25em) {
+    .navigation-bar__nav__icon {
+      display: none; } }
+
 .navigation-bar__nav__right {
   margin-left: -6px;
   padding: 0 1em; }
 
 .navigation-bar__nav__right li {
-  border: none; }
+  border: none;
+  display: inline-block;
+  text-align: center; }
   .navigation-bar__nav__right li .twitter {
     color: #28aae1; }
   .navigation-bar__nav__right li .youtube {
@@ -469,18 +522,24 @@ p {
   .secondary-nav__nav a {
     color: #ffffff; }
 
-.section, .section--large, .section--mini {
+.section, .section--medium, .section--large, .section--mini {
   max-width: 68em;
   margin-left: auto;
   margin-right: auto;
   padding: 1em 1em; }
-  .section::after, .section--large::after, .section--mini::after {
+  .section::after, .section--medium::after, .section--large::after, .section--mini::after {
     clear: both;
     content: "";
     display: table; }
   @media screen and (min-width: 75em) {
-    .section, .section--large, .section--mini {
+    .section, .section--medium, .section--large, .section--mini {
       padding: 1em 0; } }
+
+.section--medium {
+  padding: 2em 1em; }
+  @media screen and (min-width: 75em) {
+    .section--medium {
+      padding: 2em 0; } }
 
 .section--large {
   padding: 3em 1em; }

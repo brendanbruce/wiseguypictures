@@ -1,0 +1,1 @@
+$(function(){var a=$("i[data-js='nav-expand']"),n=$(".navigation-bar__nav ul");$(a).click(function(){n.toggleClass("expanded")})});

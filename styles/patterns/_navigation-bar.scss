@@ -1,38 +1,79 @@
 .navigation-bar {
   @include outer-container;
+  margin-bottom: 1.2em;
 }
 
 .navigation-bar__logo {
-  @include span-columns(2);
+  display: block;
+  float: left;
+  margin: 0;
+  height: auto;
+  width: 50%;
+
+  @include media($small-screen) {
+    @include span-columns(3);
+    max-height: 75px;
+    width: auto;
+  }
 }
 
 .navigation-bar__nav {
-  @include span-columns(9);
   @include clearfix();
-  
-  float:right;
   margin-top: 0.5em;
-  text-align: right;
 
-	ul {
-		border: 1px solid $border-blue;
-    display: inline-block;
-	}
-
-	li {
-		display: inline-block;
-		border-right: 1px solid #2395d8;
+  @include media($small-screen) {
+    @include span-columns(9);
+    float:right;
+    text-align: right;
   }
 
-	a {
-		color: $navigation-font-color;
-		text-transform: uppercase;
-		display: inline-block;
-		padding: 1em;
-	}
+  ul {
+    border: 1px solid $border-blue;
+    clear: both;
+    display: block;
+    max-height: 1px;
+    overflow: hidden;
+    text-align: right;
+
+    &.expanded {
+      max-height: 1000px;
+      overflow: visible;
+    }
+
+    @include media($small-screen) {
+      display: inline-block;
+      max-height: 1000px;
+      overflow: auto;
+    }
+  }
+
+  li {
+
+    @include media($small-screen) {
+      display: inline-block;
+      border-right: 1px solid #2395d8;
+    }
+  }
+
+  a {
+    color: $navigation-font-color;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 1em;
+  }
 
   li:last-child {
     border-right: none;
+  }
+}
+
+.navigation-bar__nav__icon {
+  display: block;
+  float: right;
+  padding: 0.5em 0.5em 0 0;
+
+  @include media($small-screen) {
+    display: none;
   }
 }
 
@@ -43,6 +84,8 @@
 
 .navigation-bar__nav__right li {
   border: none;
+  display: inline-block;
+  text-align: center;
 
   @each $link, $var in
   (twitter: $twitter-color,

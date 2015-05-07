@@ -1,11 +1,19 @@
 .hero {
-	height: 575px;
-	overflow:hidden;
+  background-position: center;
+  height: 575px;
+  overflow: hidden;
+  position: relative;
 }
 
 .hero__image__text {
+  @include position(absolute, null null 15em 0);
   color: $white;
-  position: absolute;
+
+  @include media($medium-screen) {
+    @include span-columns(4);
+    @include position(relative, 0);
+    margin-top: 5em;
+  }
 }
 
 .hero__twitter {
