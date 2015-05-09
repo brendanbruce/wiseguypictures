@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  {embed="header/_header"}
+</head>
+<body>
+	<div class="main">
+      {embed="header/_nav-bar"}
+      
+      {exp:channel:entries channel="videos" limit="1"}   
+      <div class="video section--full">
+	  	<div class="section">
+          <div class="video__embed">
+			<iframe src="https://player.vimeo.com/video/3883636" 
+			width="900" height="506" frameborder="0" 
+			webkitallowfullscreen mozallowfullscreen allowfullscreen>
+			</iframe> 
+          </div>
+		</div>
+      </div>
+      
+	  <div class="video-details section">
+      	<div class="video-details__summary">
+          <h3 class="video-details__summary__title">{title}</h3>
+          <div class="video-details__summary__description">
+            {video_description}
+          </div>
+          
+          <div class="video-details__summary__share">
+          </div>
+          
+        </div>
+        
+        <div class="video-details__crew">
+          <h4>Written, Directed, Edited by:</h4>
+          <ul>
+            <li>Giancarlo Fiorentini &amp; Jonathan Grimm</li>
+		  </ul>
+
+ 		  <h4>Cast</h4>
+          <ul>
+            <li>Interviewer: Dominic Dierkes</li>
+            <li>Interviewee: Jon Gabrus</li>
+          </ul>
+          
+          <h4>Awards</h4>
+          <ul>
+            <li>Official Selection LA Comedy Shorts
+            <li>15th Annual Webby Awards Nominee Best Writing</li>
+            <li>15th Annual Webby Awards Honoree Comedy Individual Short or Episode</li>
+          </ul>
+          
+          <h4>Special Thanks</h4> 
+          <ul>  
+            <li>Next New Networks</li>
+          </ul>
+        </div>
+      </div>
+      {/exp:channel:entries}
+
+	    {embed="footer/_footer"}
+
+    	
+    </div>
+
+</body>
+ </html>

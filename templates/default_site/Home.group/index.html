@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	{embed="header/_header"}
+</head>
+<body>
+  <div class="main">
+  	  {embed="header/_nav-bar"}
+
+      {embed="home/_hero"}
+      {embed="home/_twitter"}
+      
+	  {embed="home/_link-bar" media_type="Video" link="#"}
+    
+      <div class="section">
+    	{exp:channel:entries channel="videos" limit="2"}
+        	<div class="home-video grid--2up">
+				<div class="home-video__video">
+                	<div class="home-video__play"></div>
+            		<a href="videos/video/{permalink}">
+	                    <img src="{video_thumbnail}" class="home-video__thumb" />
+                    </a>
+                </div>
+            	<h2 class="grid__subhead"><a href="videos/video/{permalink}">{title}</a></h2>
+            	{video_description}
+          	</div>
+          {/exp:channel:entries}
+      	</div>
+      </div>
+
+	<div class="section--gray">
+      	{embed="home/_link-bar" media_type="Writing" link="%2F%3F%2Fwriting"}
+
+        <div class="section">
+          {exp:channel:entries channel="writing" limit="4"}
+              <div class="home-writing grid--4up">
+                  <div class="home-writing__thumbnail">
+                      <img src="{writing_thumbnail}">
+                  </div>
+                  <h2 class="grid__subhead"><a href="/writings/writing/{permalink}">{title}</a></h2>
+                  <p>{writing_article}</p>
+              </div>
+          {/exp:channel:entries}
+        </div>
+      </div>
+
+	{embed="footer/_footer"}
+    
+  </div>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  {embed="header/_header"}
+</head>
+<body>
+
+  <div class="main">
+
+    {embed="header/_nav-bar"}
+	{embed="header/_sub-head" header_text="Writing"}
+
+    
+    <div class="secondary-nav section--full">
+      <div class="section--mini">
+      	<nav class="secondary-nav__nav">
+          <ul>
+            <li><a href="/writing">All Writing</a></li>
+            <li><a href="/writing/comics">Comics</a></li>
+            <li><a href="/writing/articles">Articles</a></li>
+            <li><a href="/writing/ecards">Ecards</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+  <div class="section--large">
+    {exp:channel:entries channel="writing"}      
+      <div class="grid--3up" data-writing-type="{writing_type}">
+        <div class="grid__image" style="background-image:url({writing_thumbnail});">
+        </div>
+        <h4 class="grid__subhead"><a href="writing/article/{url_title}">{title}</a></h4>
+        <p>{writing_article}</p>
+        <p>{writing_type}</p>
+      </div>	
+    {/exp:channel:entries}
+    </div>    
+
+	{embed="footer/_footer"}
+
+  </div>
+</body>
+</html>
