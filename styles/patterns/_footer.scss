@@ -1,4 +1,5 @@
 .footer {
+  @include clearfix;
   background: url(/images/bg-texture.jpg);
 
   a {

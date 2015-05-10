@@ -1,6 +1,5 @@
 .section {
   @include outer-container();
-
   padding: $base-margin 1em;
 
   @include media($xlarge-screen) {
@@ -37,6 +36,6 @@
 }
 
 .section--gray {
-  background-color: #f2f6f7;
+  background-color: $gray-background;
   border-top: 2px solid #e1e5e6;
 }

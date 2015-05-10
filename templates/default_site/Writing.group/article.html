@@ -4,35 +4,24 @@
   {embed="header/_header"}
 </head>
 <body>
-	<div class="main">
-      {embed="header/_nav-bar"}
-      
-      {exp:channel:entries channel="writing" limit="1"}
-      <div class="video section--full">
-	  	<div class="section">
-      		<img class="image--width-100" src="{writing_thumbnail}" />
-      	</div>
+  <div class="main">
+    {embed="header/_nav-bar"}
+    {exp:channel:entries channel="writing" limit="1"}
+      <div class="entry-header section--full">
+        <div class="entry-header__image section">
+          <img src="{writing_image}" />
+        </div>
       </div>
-      
-	  <div class="video-details section">
-      	<div class="video-details__summary">
-          <h3 class="video-details__summary__title">{title}</h3>
-          <div class="video-details__summary__description">
+      <div class="section">
+        <div class="entry">
+          <h3 class="entry__header">{title}</h3>
+          <div class="entry__text">
             {writing_article}
           </div>
-          
-          <div class="video-details__summary__share">
-          </div>
-          
         </div>
-        
       </div>
-      {/exp:channel:entries}
-
-	    {embed="footer/_footer"}
-
-    	
-    </div>
-
+    {/exp:channel:entries}
+    {embed="footer/_footer"}
+  </div>
 </body>
- </html>
+</html>
