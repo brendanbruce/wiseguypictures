@@ -301,6 +301,9 @@ p {
   content: "";
   display: table; }
 
+.overflow {
+  overflow: hidden; }
+
 .position-relative {
   position: relative; }
 
@@ -488,14 +491,13 @@ p {
   margin: -4px 0 0 10px; }
 
 .navigation-bar {
-  max-width: 68em;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 1.2em; }
-  .navigation-bar::after {
-    clear: both;
-    content: "";
-    display: table; }
+  background-color: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+  position: relative; }
+  @media screen and (min-width: 40em) {
+    .navigation-bar {
+      width: 100%;
+      z-index: 200; } }
 
 .navigation-bar__logo {
   display: block;
@@ -509,7 +511,7 @@ p {
       display: block;
       margin-right: 2.3576515979%;
       width: 23.2317613015%;
-      max-height: 75px;
+      max-height: 60px;
       width: auto; }
       .navigation-bar__logo:last-child {
         margin-right: 0; } }
@@ -531,7 +533,6 @@ p {
       .navigation-bar__nav:last-child {
         margin-right: 0; } }
   .navigation-bar__nav ul {
-    border: 1px solid #2395d8;
     clear: both;
     display: block;
     max-height: 1px;
@@ -547,15 +548,17 @@ p {
         overflow: auto; } }
   @media screen and (min-width: 31.25em) {
     .navigation-bar__nav li {
-      display: inline-block;
-      border-right: 1px solid #2395d8; } }
+      display: inline-block; } }
   .navigation-bar__nav a {
-    color: #191b3f;
+    -webkit-transition: color 0.5s;
+    -moz-transition: color 0.5s;
+    transition: color 0.5s;
+    color: #bbb;
     text-transform: uppercase;
     display: inline-block;
-    padding: 1em; }
-  .navigation-bar__nav li:last-child {
-    border-right: none; }
+    padding: 1em 0.6em; }
+  .navigation-bar__nav a:hover {
+    color: #191b3f; }
 
 .navigation-bar__nav__icon {
   display: block;
@@ -566,8 +569,12 @@ p {
       display: none; } }
 
 .navigation-bar__nav__right {
+  display: block;
   margin-left: -6px;
   padding: 0 1em; }
+  @media screen and (min-width: 40em) {
+    .navigation-bar__nav__right {
+      display: block; } }
 
 .navigation-bar__nav__right li {
   border: none;

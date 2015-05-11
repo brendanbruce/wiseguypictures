@@ -1,6 +1,12 @@
 .navigation-bar {
-  @include outer-container;
-  margin-bottom: 1.2em;
+  background-color: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+  position: relative;
+
+  @include media($medium-screen) {
+    width: 100%;
+    z-index: 200;
+  }
 }
 
 .navigation-bar__logo {
@@ -12,7 +18,7 @@
 
   @include media($small-screen) {
     @include span-columns(3);
-    max-height: 75px;
+    max-height: 60px;
     width: auto;
   }
 }
@@ -28,7 +34,6 @@
   }
 
   ul {
-    border: 1px solid $border-blue;
     clear: both;
     display: block;
     max-height: 1px;
@@ -51,19 +56,19 @@
 
     @include media($small-screen) {
       display: inline-block;
-      border-right: 1px solid #2395d8;
     }
   }
 
   a {
+    @include transition(color 0.5s);
     color: $navigation-font-color;
     text-transform: uppercase;
     display: inline-block;
-    padding: 1em;
+    padding: 1em 0.6em;
   }
 
-  li:last-child {
-    border-right: none;
+  a:hover {
+    color: $navigation-font-hover-color;
   }
 }
 
@@ -78,8 +83,13 @@
 }
 
 .navigation-bar__nav__right {
+  display: block;
   margin-left: -6px;
   padding:0 1em;
+
+  @include media ($medium-screen) {
+    display: block;
+  }
 }
 
 .navigation-bar__nav__right li {

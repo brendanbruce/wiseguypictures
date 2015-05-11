@@ -2,6 +2,10 @@
   @include clearfix;
 }
 
+.overflow {
+  overflow: hidden;
+}
+
 .position-relative {
   position: relative;
 }

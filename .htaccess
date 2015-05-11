@@ -16,3 +16,5 @@
 <IfDefine APACHE2>
     AcceptPathInfo on
 </IfDefine>
+
+php_value zlib.output_compression off

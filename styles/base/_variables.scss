@@ -13,7 +13,7 @@ $base-font-size: 1em;
 $base-line-height: 1.6;
 $base-vertical-spacing: ($base-line-height / 2) + em;
 $base-content-width: em(800);
-$navigation-bar-height: 60px;
+$navigation-bar-height: 93px;
 $navigation-button-height: $navigation-bar-height;
 $base-margin: $base-unit;	
 $base-padding: $base-unit;	
@@ -70,7 +70,8 @@ $base-border-color: rgba($black, .1);
 $base-accent-color: $blue;
 $base-font-color: $dark-gray;
 $base-submit-color: $soft-green;
-$navigation-font-color: $dark-navy;
+$navigation-font-color: $gray;
+$navigation-font-hover-color: $dark-navy;
 
 // Form Colors
 $base-label-color: $dark-gray;
