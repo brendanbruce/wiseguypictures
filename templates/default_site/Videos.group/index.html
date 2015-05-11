@@ -1,47 +1,46 @@
 <!DOCTYPE html>
 <html>
 <head>
-        {embed="header/_header"}
+  {embed="header/_header"}
 </head>
 <body>
 
   <div class="main">
-
     {embed="header/_nav-bar"}
-	{embed="header/_sub-head" header_text="Videos"}
+    {embed="header/_sub-head" header_text="Videos"}
 
-    <div class="featured-video section">
-      
-      <div class="featured-video__caption position-absolute">
-        <span class="featured-video__caption__label">
-        	Featured Video
-        </span>
-        <h3 class="featured-video__caption__header">
-        	The Old Man and the Seymour
-        </h3>
-        <img class="featured-video__caption__arrow position-absolute" src="/images/arrow.png" />
+    {exp:channel:entries channel="videos" search:featured="=featured" limit="1"}
+      <div class="featured-video section--feature">
+        <div class="featured-video__caption">
+          <span class="featured-video__caption__label">
+            Featured Video
+          </span>
+          <h3 class="featured-video__caption__header">
+            <a href="/videos/video/{url_title}">{title}</a>
+          </h3>
+          <img class="featured-video__caption__arrow position-absolute" src="/images/arrow.png" />
+        </div>
+        <img class="featured-video__image" src="{video_thumbnail}" />
       </div>
-      
-      <img class="featured-video__image" src="/images/image-featured.jpg" />
-    </div>
-    
+    {/exp:channel:entries}
+
     <div class="section">
-      {exp:channel:entries channel="videos"}   
+      {exp:channel:entries channel="videos"}
         <div class="grid--2up">
           <div class="grid__image" style="background-image:url({video_thumbnail});">
           </div>
           <h4 class="grid__subhead">
-            <a href="videos/video/{url_title}">The Old Man and the Seymour</a>
+            <a href="videos/video/{url_title}">{title}</a>
           </h4>
           <p>
-            {video_description}
+            {video_teaser}
           </p>
         </div>
       {/exp:channel:entries}
     </div>
-    
-    {embed="footer/_footertett"}
-    
+
+    {embed="footer/_footer"}
+
   </div>
 </body>
 </html>

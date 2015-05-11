@@ -25,6 +25,19 @@
   }
 }
 
+.section--feature {
+  padding: $base-margin 0;
+
+  @include media($medium-screen) {
+    @include outer-container();
+    padding: $base-margin 1em;
+  }
+
+  @include media($xlarge-screen) {
+    padding: $base-margin 0;
+  }
+}
+
 .section--full {
   padding: $base-margin 0;
 }
