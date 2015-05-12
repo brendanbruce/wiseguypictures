@@ -1,9 +1,19 @@
-.home-writing {
+.writing {
 }
 
-.home-writing__thumbnail {
-  background-color: $gray-background;
-  border: 1em solid $gray-background;
+.writing:hover {
+  .writing__thumbnail img {
+    max-height: 110%;
+    max-width: 110%;
+  }
+}
+
+.writing__teaser {
+  font-size: $small-font-size;
+}
+
+.writing__thumbnail {
+  border: 1em solid $white;
   height: 16em;
   padding: 1em;
   position: relative;
@@ -12,11 +22,23 @@
   img {
     @include position(absolute, 50% null null 50%);
     @include transform(translateX(-50%) translateY(-50%));
+    @include transition(max-height 0.25s ease-out, max-width 0.25s ease-out);
+
     box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.4);
     display: block;
     height: auto;
     max-height: 100%;
     max-width: 100%;
     width: auto;
+  }
+}
+
+.writing__type {
+  a {
+    border: 1px solid $light-gray;
+    color: $gray;
+    display: inline-block;
+    font-size: $small-font-size;
+    padding: 0.5em;
   }
 }

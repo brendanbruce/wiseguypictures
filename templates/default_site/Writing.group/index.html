@@ -24,18 +24,27 @@
 
       <div class="section--large">
         {exp:channel:entries channel="writing"}
-          <div class="grid--3up" data-writing-type="{writing_type}">
-            <div class="grid__image" 
-              style="background-image:url(
-                {if writing_thumbnail}
-                  {writing_thumbnail}
-                {if:else}
-                  {writing_image}
-                {/if}
-              );">
+          <div class="grid--3up writing" data-writing-type="{writing_type}">
+            <a href="writing/article/{url_title}">
+              <div class="writing__thumbnail">
+                <img src="
+                  {if writing_thumbnail}
+                    {writing_thumbnail}
+                  {if:else}
+                    {writing_image}
+                  {/if}
+                ">
+              </div>
+            </a>
+            <h4 class="grid__subhead">
+              <a href="writing/article/{url_title}">{title}</a>
+            </h4>
+            <p class="writing__teaser">{writing_teaser}</p>
+            <div class="writing__type">
+              {categories}
+                <a href="#">{category_name}</a>
+              {/categories}
             </div>
-            <h4 class="grid__subhead"><a href="writing/article/{url_title}">{title}</a></h4>
-            <p>{writing_type}</p>
           </div>
         {/exp:channel:entries}
       </div>

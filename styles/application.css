@@ -17,7 +17,7 @@ body {
   padding: 0; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "proxima-nova-soft", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 700;
   letter-spacing: .025em;
   margin-top: 0; }
@@ -269,9 +269,10 @@ p {
       height: 20em; } }
 
 .grid__subhead {
-  font-size: 1.5em;
-  font-weight: 300;
-  margin: 0.5em 0 0.25em; }
+  font-size: 1.25em;
+  font-weight: 500;
+  margin: 0.5em 0 0.25em;
+  text-transform: uppercase; }
   .grid__subhead a {
     color: #191b3f; }
   .grid__subhead p {
@@ -407,14 +408,20 @@ p {
 .home-video__thumb {
   width: 100%; }
 
-.home-writing__thumbnail {
-  background-color: #f2f6f7;
-  border: 1em solid #f2f6f7;
+.writing:hover .writing__thumbnail img {
+  max-height: 110%;
+  max-width: 110%; }
+
+.writing__teaser {
+  font-size: 0.875em; }
+
+.writing__thumbnail {
+  border: 1em solid #ffffff;
   height: 16em;
   padding: 1em;
   position: relative;
   width: 100%; }
-  .home-writing__thumbnail img {
+  .writing__thumbnail img {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -423,12 +430,22 @@ p {
     -ms-transform: translateX(-50%) translateY(-50%);
     -o-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%);
+    -webkit-transition: max-height 0.25s ease-out, max-width 0.25s ease-out;
+    -moz-transition: max-height 0.25s ease-out, max-width 0.25s ease-out;
+    transition: max-height 0.25s ease-out, max-width 0.25s ease-out;
     box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.4);
     display: block;
     height: auto;
     max-height: 100%;
     max-width: 100%;
     width: auto; }
+
+.writing__type a {
+  border: 1px solid #eee;
+  color: #bbb;
+  display: inline-block;
+  font-size: 0.875em;
+  padding: 0.5em; }
 
 .link-header {
   height: 60px;
@@ -623,7 +640,7 @@ p {
 
 .secondary-nav__nav {
   text-transform: uppercase;
-  font-size: 0.8em;
+  font-size: 0.875em;
   font-weight: 700; }
   .secondary-nav__nav li {
     display: inline-block;
@@ -631,7 +648,12 @@ p {
   .secondary-nav__nav li:first-child {
     padding-left: 0; }
   .secondary-nav__nav a {
+    -webkit-transition: 0.25s, color;
+    -moz-transition: 0.25s, color;
+    transition: 0.25s, color;
     color: #ffffff; }
+  .secondary-nav__nav a:hover {
+    color: #191b3f; }
 
 .section, .section--medium, .section--large, .section--mini {
   max-width: 68em;
