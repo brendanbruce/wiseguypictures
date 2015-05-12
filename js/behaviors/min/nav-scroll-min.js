@@ -1,1 +1,1 @@
-var s=skrollr.init();
+$(document).ready(function(){var n=$("window"),o=$("div").find("[data-js='nav-scroll']");console.log(o)});
