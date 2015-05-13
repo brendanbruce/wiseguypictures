@@ -1,0 +1,1 @@
+$(document).ready(function(){var i=$("#isotope");i.isotope({itemSelector:".writing"}),$(".comics").click(function(){i.isotope({filter:".comic"})})});
