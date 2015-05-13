@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -10,7 +11,7 @@ html {
 
 body {
   -webkit-font-smoothing: antialiased;
-  color: #555;
+  color: #202020;
   font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1em;
   margin: 0;
@@ -60,7 +61,7 @@ label {
 
 p {
   margin: 0 0 1em;
-  color: #555;
+  color: #202020;
   font-size: 1em;
   line-height: 1.6; }
 
@@ -166,11 +167,8 @@ p {
   transform: translateY(-50%); }
 
 .footer {
-  background: url(/images/bg-texture.jpg); }
-  .footer::after {
-    clear: both;
-    content: "";
-    display: table; }
+  background: url(/images/bg-texture.jpg);
+  clear: both; }
   .footer a {
     color: #ffffff; }
 
@@ -442,10 +440,13 @@ p {
 
 .writing__type a {
   border: 1px solid #eee;
-  color: #bbb;
+  color: #999;
   display: inline-block;
   font-size: 0.875em;
   padding: 0.5em; }
+
+.main {
+  margin-top: 93px; }
 
 .link-header {
   height: 60px;
@@ -600,7 +601,7 @@ p {
     -webkit-transition: color 0.5s;
     -moz-transition: color 0.5s;
     transition: color 0.5s;
-    color: #bbb;
+    color: #999;
     display: inline-block;
     padding: 1em 0.875em; }
   .navigation-bar__nav a:hover {
@@ -706,6 +707,121 @@ p {
 .section--gray {
   background-color: #f2f6f7;
   border-top: 2px solid #e1e5e6; }
+
+.story {
+  margin: 0.5em 0;
+  border-bottom: 1px solid #eee; }
+  .story::after {
+    clear: both;
+    content: "";
+    display: table; }
+  .story:last-of-type {
+    border-bottom: none; }
+  @media screen and (min-width: 40em) {
+    .story {
+      float: left;
+      display: block;
+      margin-right: 2.3576515979%;
+      width: 82.9403914003%;
+      margin-left: 8.5298042998%; }
+      .story:last-child {
+        margin-right: 0; } }
+
+.story__copy {
+  float: left;
+  display: block;
+  margin-right: 2.3576515979%;
+  width: 100%; }
+  .story__copy:last-child {
+    margin-right: 0; }
+  @media screen and (min-width: 40em) {
+    .story__copy {
+      float: left;
+      display: block;
+      margin-right: 2.8425855704%;
+      width: 58.8629657719%; }
+      .story__copy:last-child {
+        margin-right: 0; } }
+
+.story__copy__date {
+  color: #999;
+  display: block;
+  font-weight: 500;
+  line-height: 1;
+  margin-bottom: 0.5em; }
+
+.story__copy__header {
+  font-size: 2em;
+  font-weight: 500;
+  line-height: 1;
+  margin-bottom: 0.625em;
+  text-transform: uppercase; }
+  .story__copy__header a {
+    -webkit-transition: color 0.25s ease-out;
+    -moz-transition: color 0.25s ease-out;
+    transition: color 0.25s ease-out;
+    color: #2580b3; }
+  .story__copy__header a:hover {
+    color: #14445e; }
+
+.story__copy__text, .story__copy__text--article {
+  color: #202020;
+  font-size: 1.125em;
+  line-height: 1.5; }
+  .story__copy__text blockquote, .story__copy__text--article blockquote {
+    background: #eee;
+    border-left: 0.5em solid #999;
+    font-size: 0.875em;
+    line-height: 1.5;
+    margin: 1.5em 2em;
+    padding: 1.25em;
+    quotes: "“" "”" "‘" "’"; }
+  .story__copy__text blockquote:before, .story__copy__text--article blockquote:before {
+    color: #999;
+    content: open-quote;
+    display: block;
+    float: left;
+    font-size: 6em;
+    line-height: 0.1em;
+    margin: 0.4em 0.25em 0 0;
+    padding-left: 0.2em; }
+  .story__copy__text blockquote p, .story__copy__text--article blockquote p {
+    display: inline; }
+  .story__copy__text figure, .story__copy__text--article figure {
+    margin: 2em 0 1em; }
+    .story__copy__text figure figcaption, .story__copy__text--article figure figcaption {
+      color: #999;
+      font-size: 0.875em;
+      text-align: left; }
+  .story__copy__text ul, .story__copy__text--article ul {
+    list-style-type: disc;
+    padding: 0 1.5em 0 1.5em; }
+    .story__copy__text ul li, .story__copy__text--article ul li {
+      margin-bottom: 0.25em; }
+
+.story__thumbnail {
+  float: left;
+  display: block;
+  margin-right: 2.3576515979%;
+  width: 100%;
+  border-radius: 0.25em;
+  margin-bottom: 1em;
+  max-height: 16em;
+  overflow: hidden; }
+  .story__thumbnail:last-child {
+    margin-right: 0; }
+  @media screen and (min-width: 40em) {
+    .story__thumbnail {
+      float: left;
+      display: block;
+      margin-right: 2.8425855704%;
+      width: 38.2944486578%; }
+      .story__thumbnail:last-child {
+        margin-right: 0; } }
+  .story__thumbnail img {
+    display: block;
+    height: auto;
+    max-width: 100%; }
 
 .hero__twitter {
   background-color: rgba(0, 132, 209, 0.9);

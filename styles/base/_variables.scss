@@ -39,9 +39,9 @@ $border-blue: #2395d8;
 $blue: #2580b3;
 $bright-blue:#3fa5dd;
 $cold-green: #95d179;
-$dark-gray: #555;
+$dark-gray: #202020;
 $dark-navy: #191b3f;
-$gray: #bbb;
+$gray: #999;
 $gray-background: #f2f6f7;
 $highlight-blue: #379dd5;
 $light-gray: #eee;
@@ -101,6 +101,8 @@ $flash-notice-color: $notice-color;
 $flash-success-color: darken($success-color, 5);
 
 // Text Link Colors
+$header-color: $blue;
+$header-color-hover: darken($header-color, 20);
 $base-link-color: darken($base-accent-color, 20);
 $hover-link-color: darken($base-accent-color, 30);
 
@@ -123,6 +125,9 @@ $form-box-shadow: inset 0 1px 3px hsla(0, 0%, 0%, 0.06);
 $form-box-shadow-focus: $form-box-shadow, 0 0 5px rgba(darken($form-border-color-focus, 5), 0.7);
 $form-font-size: $base-font-size;
 $form-font-family: $base-font-family;
+
+//transition time
+$transition-fast: 0.25s;
 
 // z-indicies
 $z-index-in-content: 10;

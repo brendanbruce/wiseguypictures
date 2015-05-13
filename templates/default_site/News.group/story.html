@@ -10,27 +10,45 @@
     {embed="header/_sub-head" header_text="News"}
 
     <section class="section--medium">
-      {exp:channel:entries channel="news"}
+      {exp:channel:entries channel="news" limit="1"}
         <article class="story section">
           <div class="story__thumbnail">
             <img src="{news_image}">
           </div>
           <div class="story__copy">
             <h3 class="story__copy__header">
-              <a href="news/story/{url_title}">
-                {title}
-              </a>
+              {title}
             </h3>
             <span class="story__copy__date">
               {entry_date format="%F %j, %Y"}
             </span>
-            <div class="story__copy__text--teaser">
-              {news_blurb}
+            <div class="story__copy__text--article">
+              {news_article}
             </div>
           </div>
         </article>
       {/exp:channel:entries}
     </section>
+
+    <section class="section--medium">
+      <h3>
+        More Recent News 
+      </h3>
+      <div class="section">
+        {exp:channel:entries channel="news" limit="4"}
+          <div class="grid--4up">
+            <div class="grid__image">
+              <img src="{news_image}">
+            </div>
+            <div class="grid__subhead">
+              <a href="news/story/{url_title}">
+                {title}
+              </a>
+            </div>
+          </div>
+        {/exp:channel:entries}
+      </div>
+    </div>
 
     {embed="footer/_footer"}
   </div>

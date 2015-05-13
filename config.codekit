@@ -1999,6 +1999,28 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/images\/uploads\/writing\/_thumbs\/DSC00673_cc1.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2918,
+		"inputAbbreviatedPath": "\/images\/uploads\/writing\/_thumbs\/DSC00673_cc1.jpg",
+		"outputAbbreviatedPath": "\/images\/uploads\/writing\/_thumbs\/DSC00673_cc1.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/uploads\/writing\/_thumbs\/DSC00722_cc1.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 3247,
+		"inputAbbreviatedPath": "\/images\/uploads\/writing\/_thumbs\/DSC00722_cc1.jpg",
+		"outputAbbreviatedPath": "\/images\/uploads\/writing\/_thumbs\/DSC00722_cc1.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/uploads\/writing\/_thumbs\/index.html": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -2015,6 +2037,17 @@
 		"initialSize": 6151,
 		"inputAbbreviatedPath": "\/images\/uploads\/writing\/_thumbs\/ipad-raising-children-funny-ecard-xMD.png",
 		"outputAbbreviatedPath": "\/images\/uploads\/writing\/_thumbs\/ipad-raising-children-funny-ecard-xMD.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/uploads\/writing\/_thumbs\/J_GC_Website_2.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 3080,
+		"inputAbbreviatedPath": "\/images\/uploads\/writing\/_thumbs\/J_GC_Website_2.jpg",
+		"outputAbbreviatedPath": "\/images\/uploads\/writing\/_thumbs\/J_GC_Website_2.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -2140,6 +2173,28 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/images\/uploads\/writing\/DSC00673_cc1.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 352102,
+		"inputAbbreviatedPath": "\/images\/uploads\/writing\/DSC00673_cc1.jpg",
+		"outputAbbreviatedPath": "\/images\/uploads\/writing\/DSC00673_cc1.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/uploads\/writing\/DSC00722_cc1.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 370530,
+		"inputAbbreviatedPath": "\/images\/uploads\/writing\/DSC00722_cc1.jpg",
+		"outputAbbreviatedPath": "\/images\/uploads\/writing\/DSC00722_cc1.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/uploads\/writing\/ipad-raising-children-funny-ecard-xMD.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -2147,6 +2202,17 @@
 		"initialSize": 14779,
 		"inputAbbreviatedPath": "\/images\/uploads\/writing\/ipad-raising-children-funny-ecard-xMD.png",
 		"outputAbbreviatedPath": "\/images\/uploads\/writing\/ipad-raising-children-funny-ecard-xMD.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/uploads\/writing\/J_GC_Website_2.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 163646,
+		"inputAbbreviatedPath": "\/images\/uploads\/writing\/J_GC_Website_2.jpg",
+		"outputAbbreviatedPath": "\/images\/uploads\/writing\/J_GC_Website_2.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -2755,6 +2821,22 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
+	"\/styles\/patterns\/_story.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/styles\/patterns\/_story.scss",
+		"outputAbbreviatedPath": "\/styles\/css\/_story.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
 	"\/styles\/patterns\/_twitter.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
@@ -2780,6 +2862,38 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/styles\/patterns\/_video.scss",
 		"outputAbbreviatedPath": "\/styles\/css\/_video.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
+	"\/styles\/patterns\/layouts\/_base.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/styles\/patterns\/layouts\/_base.scss",
+		"outputAbbreviatedPath": "\/styles\/patterns\/css\/_base.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
+	"\/styles\/patterns\/layouts\/_main-layout.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/styles\/patterns\/layouts\/_main-layout.scss",
+		"outputAbbreviatedPath": "\/styles\/patterns\/css\/_main-layout.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -4214,15 +4328,6 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/system\/expressionengine\/config\/colors.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/system\/expressionengine\/config\/config.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/system\/expressionengine\/config\/config.php",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
@@ -9995,6 +10100,15 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/templates\/default_site\/News.group\/index.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/templates\/default_site\/News.group\/story.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/templates\/default_site\/News.group\/story.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
