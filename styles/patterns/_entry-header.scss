@@ -1,6 +1,5 @@
 .entry-header {
   background-color: $light-gray;
-
 }
 
 .entry-header__image {
@@ -9,4 +8,20 @@
     display: block;
     margin: 0 auto;
   }
+}
+
+.entry-header__pagination {
+  background-color: $gray;
+}
+
+.entry-header__pagination__section {
+  @include span-columns(6);
+  background-color: $gray;
+  border-right: 1px solid $light-gray;
+}
+
+.entry-header__pagination__section--right {
+  @extend .entry-header__pagination__section;
+  text-align: right;
+  border-right: none;
 }

@@ -6,12 +6,31 @@
 <body>
   <div class="main">
     {embed="header/_nav-bar"}
-    {exp:channel:entries channel="writing" limit="1"}
-      <div class="entry-header section--full">
+
+    <div class="entry-header section--full">
+      {exp:channel:entries channel="writing" limit="1"}
         <div class="entry-header__image section">
           <img src="{writing_image}" />
         </div>
+      {/exp:channel:entries}
+    </div>
+
+    <div class="section--full entry-header__pagination">
+      <div class="section">
+        {exp:channel:prev_entry channel="writing"}
+          <div class="entry-header__pagination__section">
+            <a href="{path='writing/article'}">Previous Article</a>
+          </div>
+        {/exp:channel:prev_entry}
+        {exp:channel:next_entry channel="writing"}
+          <div class="entry-header__pagination__section--right">
+            <a href="{path='writing/article'}">Next Article</a>
+          </div>
+        {/exp:channel:next_entry}
       </div>
+    </div>
+
+    {exp:channel:entries channel="writing" limit="1"}
       <div class="section">
         <div class="entry">
           <h3 class="entry__header">{title}</h3>
@@ -21,6 +40,7 @@
         </div>
       </div>
     {/exp:channel:entries}
+
     {embed="footer/_footer"}
   </div>
 </body>
