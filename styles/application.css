@@ -618,7 +618,7 @@ p {
         overflow: auto; } }
   .navigation-bar__nav li {
     font-size: 1em;
-    font-weight: 300;
+    font-weight: 500;
     letter-spacing: 1px;
     text-transform: uppercase; }
     @media screen and (min-width: 40em) {
