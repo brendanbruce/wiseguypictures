@@ -1,4 +1,13 @@
 .writing {
+  height: auto;
+  margin-bottom: 2em;
+  padding: 2em;
+  width: 100%;
+
+  @include media($large-screen) {
+    float: left;
+    width: 33%;
+  }
 }
 
 .writing:hover {
@@ -13,9 +22,8 @@
 }
 
 .writing__thumbnail {
-  border: 1em solid $white;
   height: 16em;
-  padding: 1em;
+  margin-bottom: 2em;
   position: relative;
   width: 100%;
 

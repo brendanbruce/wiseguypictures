@@ -1,12 +1,36 @@
 $(document).ready(function() {
   var $container = $('#isotope');
+
   $container.isotope({
-    itemSelector: '.writing'
+    layoutMode: 'fitRows',
+    itemSelector: '.writing',
   });
 
-  $('.comics').click(function() {
+  $container.imagesLoaded( function() {
+      $container.isotope('layout');
+  });
+
+  $('.writing-nav--all').click(function() {
+    $container.isotope({
+      filter: '*',
+    });
+  });
+
+  $('.writing-nav--comics').click(function() {
     $container.isotope({
       filter: '.comic',
+    });
+  });
+
+  $('.writing-nav--articles').click(function() {
+    $container.isotope({
+      filter: '.article',
+    });
+  });
+
+  $('.writing-nav--ecards').click(function() {
+    $container.isotope({
+      filter: '.ecard',
     });
   });
 });

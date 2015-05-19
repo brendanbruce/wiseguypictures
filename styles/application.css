@@ -406,6 +406,16 @@ p {
 .home-video__thumb {
   width: 100%; }
 
+.writing {
+  height: auto;
+  margin-bottom: 2em;
+  padding: 2em;
+  width: 100%; }
+  @media screen and (min-width: 56.25em) {
+    .writing {
+      float: left;
+      width: 33%; } }
+
 .writing:hover .writing__thumbnail img {
   max-height: 110%;
   max-width: 110%; }
@@ -414,9 +424,8 @@ p {
   font-size: 0.875em; }
 
 .writing__thumbnail {
-  border: 1em solid #ffffff;
   height: 16em;
-  padding: 1em;
+  margin-bottom: 2em;
   position: relative;
   width: 100%; }
   .writing__thumbnail img {

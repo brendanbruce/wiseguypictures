@@ -13,10 +13,26 @@
         <div class="section--mini">
           <nav class="secondary-nav__nav">
             <ul>
-              <li><a href="/writing">All Writing</a></li>
-              <li><a class="comics" data-filter=".comic">Comics</a></li>
-              <li><a href="/writing/articles">Articles</a></li>
-              <li><a href="/writing/ecards">Ecards</a></li>
+              <li>
+                <a class="writing-nav--all" data-filter="*">
+                  All Writing
+                </a>
+              </li>
+              <li>
+                <a class="writing-nav--comics" data-filter=".comic">
+                  Comics
+                </a>
+              </li>
+              <li>
+                <a class="writing-nav--articles" data-filter=".article">
+                  Articles
+                </a>
+              </li>
+              <li>
+                <a class="writing-nav--ecards" data-filter=".ecard">
+                  Ecards
+                </a>
+              </li>
             </ul>
           </nav>
         </div>
@@ -24,8 +40,8 @@
 
       <div class="section--large" data-js="isotope" id="isotope">
         {exp:channel:entries channel="writing"}
-          <div class="grid--3up writing {writing_type}">
-            <a href="writing/article/{url_title}">
+          <div class="writing {writing_type}">
+            <a href="{title_permalink="writing/article"}">
               <div class="writing__thumbnail">
                 <img src="
                   {if writing_thumbnail}
@@ -37,13 +53,11 @@
               </div>
             </a>
             <h4 class="grid__subhead">
-              <a href="writing/article/{url_title}">{title}</a>
+              <a href="{title_permalink="writing/article"}">{title}</a>
             </h4>
             <p class="writing__teaser">{writing_teaser}</p>
             <div class="writing__type">
-              {categories}
-                <a href="#">{category_name}</a>
-              {/categories}
+              <a href="#">{writing_type}</a>
             </div>
           </div>
         {/exp:channel:entries}
